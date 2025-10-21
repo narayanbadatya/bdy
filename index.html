@@ -2,31 +2,221 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" type="image/x-icon" href="./img/hbd.png">
   <title>Happy Birthday!</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+    }
+
+    .bg {
+      background-image: url(./img/background.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: #FEC0CD;
+      height: 100%;
+    }
+
+    .img {
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      top: 20px;
+      margin-bottom: 30px;
+      width: 350px;
+    }
+
+    #tap {
+      display: inline-block;
+    }
+
+    .foto {
+      width: 80%;
+      max-width: 400px;
+      min-width: 300px;
+      margin-top: 100px;
+      display: inline-block;
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=Roboto);
+    @import url(https://fonts.googleapis.com/css?family=Handlee);
+
+    .paper {
+      font-family: 'Roboto', sans-serif;
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+      min-width: 300px;
+      height: 540px;
+      margin: 50px auto;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+      background: #fafafa;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+      overflow: hidden;
+    }
+
+    .paper:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 5px;
+      width: 45px;
+      background: radial-gradient(#616161 6px, transparent 7px) repeat-y;
+      background-size: 30px 30px;
+      border-right: 3px solid #D44147;
+      box-sizing: border-box;
+    }
+
+    .paper-content {
+      position: absolute;
+      top: 30px;
+      right: 0;
+      bottom: 30px;
+      left: 50px;
+      background: linear-gradient(transparent, transparent 28px, #91D1D3 28px);
+      background-size: 30px 30px;
+    }
+
+    .paper-content .teks {
+      text-align: left;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      max-height: 100%;
+      line-height: 30px;
+      padding: 0 10px;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: #3f3f44;
+      font-family: 'Handlee', cursive;
+      font-size: 18px;
+      box-sizing: border-box;
+      z-index: 1;
+    }
+
+    .kotak {
+      position: relative;
+      width: 90%;
+      max-width: 550px;
+      min-width: 200px;
+      max-height: 350px;
+      min-height: 100px;
+      top: 300px;
+      padding: 20px 0;
+      display: inline-block;
+      background: #fafafa;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+      overflow: hidden;
+    }
+
+    .btn {
+      border-radius: 40px;
+    }
+
+    #slideLima {
+      position: relative;
+      top: 300px;
+    }
+
+    #trims {
+      position: relative;
+      top: 300px;
+      display: inline-block;
+    }
+
+    h1 {
+      font-weight: normal;
+    }
+
+    li {
+      display: inline-block;
+      font-size: 16px;
+      list-style-type: none;
+      position: relative;
+      left: -20px;
+      margin-top: 10px;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+
+    li span {
+      display: block;
+      font-size: 24px;
+    }
+
+    body {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+
+    .container {
+      color: #333;
+      position: relative;
+      top: 250px;
+      padding: 0;
+      text-align: center;
+    }
+
+    .d-none {
+      display: none !important;
+    }
+
+    .color-option {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: inline-block;
+      margin: 10px;
+      border: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .color-option:hover {
+      transform: scale(1.1);
+      border-color: #333;
+    }
+
+    .emoji-option {
+      font-size: 60px;
+      cursor: pointer;
+      display: inline-block;
+      margin: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .emoji-option:hover {
+      transform: scale(1.2);
+    }
+  </style>
 </head>
 
 <body>
-  <audio id="background-music" src="./music/monokrom.mp3" preload="auto">
-  </audio>
+  <audio id="background-music" src="./music/sss.mp3" preload="auto"></audio>
 
   <div class="bg" id="content">
 
     <div class="container" id="timer">
-      <h5>Countdown to <x id='name'></x> birthday :</h5>
+      <h5>Countdown to <span id='name'></span> birthday :</h5>
       <ul>
-        <li><span id="days"></span>days</li>
         <li><span id="hours"></span>Hours</li>
         <li><span id="minutes"></span>Minutes</li>
         <li><span id="seconds"></span>Seconds</li>
@@ -50,32 +240,88 @@
       </div>
     </div>
 
+    <!-- Question 1: Do you like me? -->
     <div class="kotak d-none slides animate__animated animate__fadeInDown animate__delay-2s" id="slideEmpat">
       <div class="row">
         <div class="col-sm mt-1">
-          <h5>Do you like it?</h5>
+          <h5>Do you like me? 😊</h5>
         </div>
       </div>
       <div class="row mt-2">
         <div class="col-4 offset-2">
-          <button id="gak" class="btn btn-outline-danger"> No!</button>
+          <button id="gak" class="btn btn-outline-danger">No!</button>
         </div>
         <div class="col-4">
-          <button id="suka" class="btn btn-outline-info">Yes, I like it!!</button>
+          <button id="suka" class="btn btn-outline-info">Yes! ❤️</button>
         </div>
       </div>
     </div>
 
-    <div id="slideLima" class="d-none animate__bounceIn animate__animated animate__slow">
+    <!-- Question 2: Favorite Color -->
+    <div class="kotak d-none slides animate__animated animate__fadeInDown" id="slideLima">
+      <div class="row">
+        <div class="col-sm mt-1">
+          <h5>What's your favorite color? 🎨</h5>
+        </div>
+      </div>
+      <div class="row mt-3 justify-content-center">
+        <div class="color-option" style="background: #FF6B6B;" data-color="red"></div>
+        <div class="color-option" style="background: #4ECDC4;" data-color="blue"></div>
+        <div class="color-option" style="background: #95E1D3;" data-color="green"></div>
+        <div class="color-option" style="background: #FFE66D;" data-color="yellow"></div>
+        <div class="color-option" style="background: #C7CEEA;" data-color="purple"></div>
+      </div>
+    </div>
+
+    <!-- Question 3: How are you feeling? -->
+    <div class="kotak d-none slides animate__animated animate__fadeInDown" id="slideEnam">
+      <div class="row">
+        <div class="col-sm mt-1">
+          <h5>How are you feeling today? 😄</h5>
+        </div>
+      </div>
+      <div class="row mt-3 justify-content-center">
+        <div class="emoji-option" data-mood="happy">😊</div>
+        <div class="emoji-option" data-mood="excited">🥳</div>
+        <div class="emoji-option" data-mood="loved">🥰</div>
+        <div class="emoji-option" data-mood="grateful">😌</div>
+      </div>
+    </div>
+
+    <!-- Question 4: Do you like it? -->
+    <div class="kotak d-none slides animate__animated animate__fadeInDown" id="slideTujuh">
+      <div class="row">
+        <div class="col-sm mt-1">
+          <h5>Do you like this surprise? 🎁</h5>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col-4 offset-2">
+          <button id="gak2" class="btn btn-outline-danger">No!</button>
+        </div>
+        <div class="col-4">
+          <button id="suka2" class="btn btn-outline-success">Love it!! 💕</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Heart Animation -->
+    <div id="slideDelapan" class="d-none animate__bounceIn animate__animated animate__slow">
       <i class="fas fa-heart fa-5x text-danger"></i>
     </div>
     <p id="trims" class="text-muted d-none mt-2"></p>
 
-    <p id="tap" class="d-none animate__animated animate__pulse text-muted animate__slow animate__repeat-3">Tap to continue</p>
-    <!-- Footer -->
-    <footer class="page-footer font-small blue fixed-bottom">
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Final Message -->
+    <div id="slideSembilan" class="slides d-none paper animate__fadeIn animate__animated">
+      <div class="paper-content">
+        <p id="teks3" class="teks"></p>
+      </div>
+    </div>
+
+    <p id="tap" class="d-none animate__animated animate__pulse text-muted animate__slow animate__repeat-3">Tap to
+      continue</p>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
   </script>
@@ -84,10 +330,519 @@
   </script>
   <script src="https://kit.fontawesome.com/61e5120832.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-  <script src="https://momentjs.com/downloads/moment.js"></script>
-  <script src="https://momentjs.com/downloads/moment-with-locales.js"></script>
-  <script src="https://momentjs.com/downloads/moment-timezone-with-data.js"></script>
-  <script src="script.js"></script>
+
+  <script>
+    // Variables to store user responses
+    let userResponses = {
+      likesMe: '',
+      favoriteColor: '',
+      mood: '',
+      likesIt: ''
+    };
+
+    // Function to start music
+    function playMusic() {
+      const music = document.getElementById('background-music');
+      music.play().catch(e => console.log('Audio play failed:', e));
+    }
+    window.addEventListener('DOMContentLoaded', function () {
+      playMusic();
+    });
+    document.body.addEventListener('click', playMusic, { once: true });
+
+    const content = document.getElementById('content');
+    const timer = document.getElementById('timer');
+
+    const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+    // Set your target date here (format: 'Month Day, Year HH:MM:SS')
+    let countDown = new Date('Oct 2, 2025 0:00:00').getTime(),
+      intervalId = setInterval(function () {
+        let now = new Date().getTime(),
+          distance = countDown - now;
+        document.getElementById('hours').innerText = Math.floor(distance / (hour)),
+          document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+        if (distance < 0) {
+          timer.classList.add('d-none');
+          confetti();
+          clearInterval(intervalId);
+          showSlideOne();
+        }
+      }, second)
+
+    const showSlideOne = function () {
+      const tap = document.getElementById('tap');
+      const slideOne = document.getElementById('slideSatu');
+      slideOne.classList.remove('d-none');
+      setTimeout(function () {
+        tap.classList.remove('d-none');
+        document.body.addEventListener('click', function () {
+          showSlideTwo();
+        }, { once: true })
+      }, 7000);
+    };
+
+    const showSlideTwo = function () {
+      const slideOne = document.getElementById('slideSatu');
+      const tap = document.getElementById('tap');
+      const slideTwo = document.getElementById('slideDua');
+
+      setTimeout(function () {
+        slideOne.classList.replace('animate__slideInDown', 'animate__backOutDown');
+        tap.classList.add('d-none');
+        setTimeout(function () {
+          slideOne.classList.add('d-none');
+        }, 1000);
+      }, 1000);
+
+      slideTwo.classList.remove('d-none');
+      setTimeout(function () {
+        tap.classList.remove('d-none');
+        document.body.addEventListener('click', function () {
+          slideTwo.classList.replace('animate__zoomInDown', 'animate__fadeOutLeft');
+          slideTwo.classList.remove('animate__delay-2s', 'animate__slow');
+          tap.classList.add('d-none');
+          setTimeout(function () {
+            slideTwo.remove();
+            showSlideThree();
+          }, 1000);
+        }, { once: true })
+      }, 12000);
+    };
+
+    const showSlideThree = function () {
+      const tap = document.getElementById('tap');
+      const slideThree = document.getElementById('slideTiga');
+
+      slideThree.classList.remove('d-none');
+      setTimeout(function () {
+        tap.classList.remove('d-none');
+        document.body.addEventListener('click', function () {
+          slideThree.classList.remove('animate__delay-2s', 'animate__slow');
+          slideThree.classList.replace('animate__fadeInRight', 'animate__fadeOut');
+          tap.remove();
+          setTimeout(function () {
+            slideThree.remove();
+            showSlideFour();
+          }, 1000);
+        }, { once: true })
+      }, 13000);
+    }
+
+    function getRandomPosition(element) {
+      var x = document.body.offsetHeight - element.clientHeight;
+      var y = document.body.offsetWidth - element.clientWidth;
+      var randomX = Math.floor(Math.random() * 500);
+      var randomY = Math.floor(Math.random() * y);
+      return [randomX, randomY];
+    };
+
+    const showSlideFour = function () {
+      const slideFour = document.getElementById('slideEmpat');
+      const btnNo = document.getElementById('gak');
+      const btnYes = document.getElementById('suka');
+      slideFour.classList.remove('d-none');
+
+      btnNo.addEventListener('click', function () {
+        var xy = getRandomPosition(slideFour);
+        slideFour.style.top = xy[0] + 'px';
+      });
+
+      btnYes.addEventListener('click', function () {
+        userResponses.likesMe = 'yes';
+        slideFour.classList.replace('animate__fadeInDown', 'animate__bounceOut');
+        slideFour.classList.remove('animate__delay-2s');
+        setTimeout(function () {
+          slideFour.remove()
+          setTimeout(() => {
+            showSlideFive();
+          }, 500);
+        }, 1000);
+      })
+    };
+
+    const showSlideFive = function () {
+      const slideFive = document.getElementById('slideLima');
+      slideFive.classList.remove('d-none');
+
+      const colorOptions = document.querySelectorAll('.color-option');
+      colorOptions.forEach(option => {
+        option.addEventListener('click', function () {
+          userResponses.favoriteColor = this.getAttribute('data-color');
+          slideFive.classList.replace('animate__fadeInDown', 'animate__bounceOut');
+          setTimeout(function () {
+            slideFive.remove();
+            showSlideSix();
+          }, 1000);
+        });
+      });
+    };
+
+    const showSlideSix = function () {
+      const slideSix = document.getElementById('slideEnam');
+      slideSix.classList.remove('d-none');
+
+      const emojiOptions = document.querySelectorAll('.emoji-option');
+      emojiOptions.forEach(option => {
+        option.addEventListener('click', function () {
+          userResponses.mood = this.getAttribute('data-mood');
+          slideSix.classList.replace('animate__fadeInDown', 'animate__bounceOut');
+          setTimeout(function () {
+            slideSix.remove();
+            showSlideSeven();
+          }, 1000);
+        });
+      });
+    };
+
+    const showSlideSeven = function () {
+      const slideSeven = document.getElementById('slideTujuh');
+      const btnNo2 = document.getElementById('gak2');
+      const btnYes2 = document.getElementById('suka2');
+      slideSeven.classList.remove('d-none');
+
+      btnNo2.addEventListener('click', function () {
+        var xy = getRandomPosition(slideSeven);
+        slideSeven.style.top = xy[0] + 'px';
+      });
+
+      btnYes2.addEventListener('click', function () {
+        userResponses.likesIt = 'yes';
+        slideSeven.classList.replace('animate__fadeInDown', 'animate__bounceOut');
+        setTimeout(function () {
+          slideSeven.remove()
+          setTimeout(() => {
+            showSlideEight();
+          }, 500);
+        }, 1000);
+      })
+    };
+
+    const showSlideEight = function () {
+      const slideEight = document.getElementById('slideDelapan');
+      slideEight.classList.remove('d-none');
+      const thanks = document.getElementById('trims');
+
+      setTimeout(() => {
+        thanks.classList.remove('d-none');
+      }, 1000);
+
+      slideEight.addEventListener('animationend', () => {
+        slideEight.classList.add('animate__delay-3s')
+        slideEight.classList.replace('animate__bounceIn', 'animate__fadeOut');
+        thanks.classList.add('animate__animated', 'animate__fadeOut', 'animate__delay-3s');
+        setTimeout(() => {
+          thanks.remove();
+          setTimeout(() => {
+            slideEight.remove();
+            showSlideNine();
+          }, 1000);
+        }, 6000);
+      });
+    };
+
+    const showSlideNine = function () {
+      const slideNine = document.getElementById('slideSembilan');
+      slideNine.classList.remove('d-none');
+    };
+
+    new TypeIt("#teks1", {
+      strings: [
+        "Today, I send all my best prayers for you.",
+        "May the things that break you also be the reason you keep growing.",
+        "May the world always protect you wherever you are.",
+        "May your days always be accompanied by love without limits.",
+        "May every step you take be made easy until you achieve what you want."
+      ],
+      startDelay: 4000,
+      speed: 75,
+      waitUntilVisible: true
+    }).go();
+
+    new TypeIt("#teks2", {
+      strings: [
+        "With or without me, may the universe always make you happy in any way.",
+        " ",
+        " thank you for surviving this far.",
+        " ",
+        "Now let me ask you some questions... 💭"
+      ],
+      startDelay: 2000,
+      speed: 75,
+      waitUntilVisible: true
+    }).go();
+
+    new TypeIt("#trims", {
+      strings: ["Thank you for your answers! 💕"],
+      startDelay: 2000,
+      speed: 150,
+      loop: false,
+      waitUntilVisible: true,
+    }).go();
+
+    new TypeIt("#teks3", {
+      strings: [
+        "Your answers made this moment even more special! ✨",
+        " ",
+        "I hope this birthday brings you all the joy and happiness you deserve.",
+        " ",
+        "Remember, you are loved, appreciated, and celebrated today and always.",
+        " ",
+        "Happy Birthday, wonderful soul! 🎂🎈",
+        " ",
+        "- With love and warm wishes 💖"
+      ],
+      startDelay: 2000,
+      speed: 75,
+      waitUntilVisible: true
+    }).go();
+
+    'use strict';
+
+    var onlyOnKonami = false;
+
+    function confetti() {
+      var $window = $(window),
+        random = Math.random,
+        cos = Math.cos,
+        sin = Math.sin,
+        PI = Math.PI,
+        PI2 = PI * 2,
+        timer = undefined,
+        frame = undefined,
+        confetti = [];
+
+      var runFor = 2000
+      var isRunning = true
+
+      setTimeout(() => {
+        isRunning = false
+      }, runFor);
+
+      var particles = 150,
+        spread = 20,
+        sizeMin = 5,
+        sizeMax = 12 - sizeMin,
+        eccentricity = 10,
+        deviation = 100,
+        dxThetaMin = -.1,
+        dxThetaMax = -dxThetaMin - dxThetaMin,
+        dyMin = .13,
+        dyMax = .18,
+        dThetaMin = .4,
+        dThetaMax = .7 - dThetaMin;
+
+      var colorThemes = [
+        function () {
+          return color(200 * random() | 0, 200 * random() | 0, 200 * random() | 0);
+        },
+        function () {
+          var black = 200 * random() | 0;
+          return color(200, black, black);
+        },
+        function () {
+          var black = 200 * random() | 0;
+          return color(black, 200, black);
+        },
+        function () {
+          var black = 200 * random() | 0;
+          return color(black, black, 200);
+        },
+        function () {
+          return color(200, 100, 200 * random() | 0);
+        },
+        function () {
+          return color(200 * random() | 0, 200, 200);
+        },
+        function () {
+          var black = 256 * random() | 0;
+          return color(black, black, black);
+        },
+        function () {
+          return colorThemes[random() < .5 ? 1 : 2]();
+        },
+        function () {
+          return colorThemes[random() < .5 ? 3 : 5]();
+        },
+        function () {
+          return colorThemes[random() < .5 ? 2 : 4]();
+        }
+      ];
+
+      function color(r, g, b) {
+        return 'rgb(' + r + ',' + g + ',' + b + ')';
+      }
+
+      function interpolation(a, b, t) {
+        return (1 - cos(PI * t)) / 2 * (b - a) + a;
+      }
+
+      var radius = 1 / eccentricity,
+        radius2 = radius + radius;
+
+      function createPoisson() {
+        var domain = [radius, 1 - radius],
+          measure = 1 - radius2,
+          spline = [0, 1];
+        while (measure) {
+          var dart = measure * random(),
+            i, l, interval, a, b, c, d;
+
+          for (i = 0, l = domain.length, measure = 0; i < l; i += 2) {
+            a = domain[i], b = domain[i + 1], interval = b - a;
+            if (dart < measure + interval) {
+              spline.push(dart += a - measure);
+              break;
+            }
+            measure += interval;
+          }
+          c = dart - radius, d = dart + radius;
+
+          for (i = domain.length - 1; i > 0; i -= 2) {
+            l = i - 1, a = domain[l], b = domain[i];
+            if (a >= c && a < d)
+              if (b > d) domain[l] = d;
+              else domain.splice(l, 2);
+            else if (a < c && b > c)
+              if (b <= d) domain[i] = c;
+              else domain.splice(i, 0, c, d);
+          }
+
+          for (i = 0, l = domain.length, measure = 0; i < l; i += 2)
+            measure += domain[i + 1] - domain[i];
+        }
+
+        return spline.sort();
+      }
+
+      var container = document.createElement('div');
+      container.style.position = 'fixed';
+      container.style.top = '0';
+      container.style.left = '0';
+      container.style.width = '100%';
+      container.style.height = '0';
+      container.style.overflow = 'visible';
+      container.style.zIndex = '9999';
+
+      function Confetto(theme) {
+        this.frame = 0;
+        this.outer = document.createElement('div');
+        this.inner = document.createElement('div');
+        this.outer.appendChild(this.inner);
+
+        var outerStyle = this.outer.style,
+          innerStyle = this.inner.style;
+        outerStyle.position = 'absolute';
+        outerStyle.width = (sizeMin + sizeMax * random()) + 'px';
+        outerStyle.height = (sizeMin + sizeMax * random()) + 'px';
+        innerStyle.width = '100%';
+        innerStyle.height = '100%';
+        innerStyle.backgroundColor = theme();
+
+        outerStyle.perspective = '50px';
+        outerStyle.transform = 'rotate(' + (360 * random()) + 'deg)';
+        this.axis = 'rotate3D(' +
+          cos(360 * random()) + ',' +
+          cos(360 * random()) + ',0,';
+        this.theta = 360 * random();
+        this.dTheta = dThetaMin + dThetaMax * random();
+        innerStyle.transform = this.axis + this.theta + 'deg)';
+
+        this.x = $window.width() * random();
+        this.y = -deviation;
+        this.dx = sin(dxThetaMin + dxThetaMax * random());
+        this.dy = dyMin + dyMax * random();
+        outerStyle.left = this.x + 'px';
+        outerStyle.top = this.y + 'px';
+
+        this.splineX = createPoisson();
+        this.splineY = [];
+        for (var i = 1, l = this.splineX.length - 1; i < l; ++i)
+          this.splineY[i] = deviation * random();
+        this.splineY[0] = this.splineY[l] = deviation * random();
+
+        this.update = function (height, delta) {
+          this.frame += delta;
+          this.x += this.dx * delta;
+          this.y += this.dy * delta;
+          this.theta += this.dTheta * delta;
+
+          var phi = (this.frame % 7777) / 7777,
+            i = 0,
+            j = 1,
+            l = this.splineX.length;
+
+          while (j < l && phi >= this.splineX[j]) {
+            i = j++;
+          }
+          if (j >= l) {
+            j = l - 1;
+            i = j - 1;
+          }
+          while (phi >= this.splineX[j]) i = j++;
+          var rho = interpolation(
+            this.splineY[i],
+            this.splineY[j],
+            (phi - this.splineX[i]) / (this.splineX[j] - this.splineX[i])
+          );
+          phi *= PI2;
+
+          outerStyle.left = this.x + rho * cos(phi) + 'px';
+          outerStyle.top = this.y + rho * sin(phi) + 'px';
+          innerStyle.transform = this.axis + this.theta + 'deg)';
+          return this.y > height + deviation;
+        };
+      }
+
+      function poof() {
+        if (!frame) {
+          document.body.appendChild(container);
+
+          var theme = colorThemes[onlyOnKonami ? colorThemes.length * random() | 0 : 0],
+            count = 0;
+
+          (function addConfetto() {
+            if (onlyOnKonami && ++count > particles)
+              return timer = undefined;
+
+            if (isRunning) {
+              var confetto = new Confetto(theme);
+              confetti.push(confetto);
+              container.appendChild(confetto.outer);
+              timer = setTimeout(addConfetto, spread * random());
+            }
+          })(0);
+
+          var prev = undefined;
+          requestAnimationFrame(function loop(timestamp) {
+            var delta = prev ? timestamp - prev : 0;
+            prev = timestamp;
+            var height = $window.height();
+
+            for (var i = confetti.length - 1; i >= 0; --i) {
+              if (confetti[i].update(height, delta)) {
+                container.removeChild(confetti[i].outer);
+                confetti.splice(i, 1);
+              }
+            }
+
+            if (timer || confetti.length)
+              return frame = requestAnimationFrame(loop);
+
+            document.body.removeChild(container);
+            frame = undefined;
+          });
+        }
+      }
+
+      if (!onlyOnKonami) poof();
+    };
+  </script>
 </body>
 
 </html>

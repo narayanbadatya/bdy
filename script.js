@@ -69,7 +69,7 @@ const showSlideTwo = function () {
         showSlideThree();
       }, 1000);
     })
-  }, 40000);
+  }, 12000);
 };
 
 const showSlideThree = function () {
@@ -168,9 +168,9 @@ new TypeIt("#teks2", {
   strings: [
     "With or without me, may the universe always make you happy in any way.",
     " ",
-    "Barakallah fi umrik, thank you for surviving this far.",
+    " thank you for surviving this far.",
     " ",
-    "- Wish all you the best"
+    "- And Again Happy Birthday Cutie"
   ],
   startDelay: 2000,
   speed: 75,
