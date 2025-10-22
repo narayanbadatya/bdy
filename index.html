@@ -339,6 +339,7 @@
       mood: '',
       likesIt: ''
     };
+    
 
     // Function to start music
     function playMusic() {
@@ -359,7 +360,7 @@
       day = hour * 24;
 
     // Set your target date here (format: 'Month Day, Year HH:MM:SS')
-    let countDown = new Date('Oct 2, 2025 0:00:00').getTime(),
+    let countDown = new Date('Oct 23, 2025 0:00:00').getTime(),
       intervalId = setInterval(function () {
         let now = new Date().getTime(),
           distance = countDown - now;
